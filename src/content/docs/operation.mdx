@@ -1,0 +1,89 @@
+---
+title: How Does It Work?
+description: Cross-chain bridge technology enables asset transfers between different blockchains. Below is an in-depth look at its core components and workflow.
+keywords:
+  [
+    RainLink,
+    Privacy Policy,
+    Cross-Chain Security,
+    Data Protection,
+    Web3 Compliance
+  ]
+---
+
+import { Callout } from 'nextra/components'
+
+# RainLink Workflow
+
+Cross-chain bridge technology enables asset transfers between different blockchains. Below is an in-depth look at its core components and workflow.
+
+## Key Components
+
+A cross-chain bridge consists of three main parts:
+
+### Custodian
+
+- Locks the user’s deposited assets.  
+- Deployed on the source chain (e.g., Ethereum) via a smart contract.
+
+### Debt Issuer
+
+- Mints corresponding tokens on the target chain.  
+- Implemented on the target chain as a smart contract.
+
+### Communicator
+
+- Relays messages between chains.  
+- Runs off-chain, continuously monitoring source-chain events and forwarding them to the target chain.
+
+## Workflow
+
+![Incoming Flow](/images/operation_come.png)
+
+<Callout type="info">
+
+1. The user invokes a contract call to deposit ETH into the custodian on Ethereum.  
+2. The custodian smart contract emits an event confirming receipt.  
+3. The communicator detects this event and sends a signal to the debt issuer on the target chain.  
+4. The debt issuer mints the wrapped token (`acETH`) and transfers it to the user’s address, completing the cross-chain transfer.
+
+</Callout>
+
+To reverse the process:
+
+![Outgoing Flow](/images/operation_go.png)
+
+<Callout type="info">
+
+1. The user burns `acETH` via the debt issuer on the target chain.  
+2. Once the burn is confirmed, the debt issuer emits a redemption event.  
+3. The communicator picks up this event and notifies the custodian on the source chain.  
+4. The custodian releases the original ETH back to the user’s address.
+
+</Callout>
+
+## Fees & Security Checks
+
+When bridging assets, two factors are crucial: fees and validity verification.
+
+### Fees
+
+Users typically pay:
+
+```math
+Bridge Fee = Transaction Fee + Service Fee
+```
+
+1. Transaction Fee: Gas costs on the source and/or target blockchain (e.g., Ethereum gas).
+
+2. Service Fee: Charged by the bridge provider. See [Bridge Fee Schedule](/docs/fee) for details.
+
+### Validity Verification
+
+The communicator ensures security by:
+
+1. Executing the lock or burn on the source chain.
+
+2. Waiting for a sufficient number of confirmations to guarantee finality.
+
+3. Relaying the event only after confirmation, ensuring the cross-chain transfer is both safe and valid.

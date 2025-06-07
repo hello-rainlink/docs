@@ -1,0 +1,61 @@
+---
+title: Service Fee
+description: In today’s rapidly evolving blockchain space, information silos between chains remain a major barrier in the Web3 world. RainLink was born in this context,
+keywords:
+  [
+    RainLink,
+    Privacy Policy,
+    Cross-chain Security,
+    Data Protection,
+    Web3 Compliance,
+  ]
+---
+
+import { Callout } from 'nextra/components'
+
+# Service Fee Policy
+
+RainLink 致力于提供高效、安全的跨链桥服务。为了支持系统运行、网络中继、安全审计与基础设施维护，我们对每笔跨链操作收取适度的服务手续费（Service Fee）。本说明文档详细介绍服务费的构成、适用规则以及相关说明。
+
+## 什么是服务手续费？
+
+服务手续费是 RainLink 在完成跨链资产传输过程中向用户收取的固定或比例型费用，独立于区块链本身的 Gas 成本。该费用用于：
+
+- 支付中继节点运营与维护成本；
+- 覆盖链下通信服务器资源消耗；
+- 资助持续安全审计与系统升级；
+- 提供用户支持与交易追踪服务。
+
+
+## 服务手续费与交易手续费的区别
+
+用户在使用 RainLink 时通常会支付两个部分：
+
+```math
+Bridge Fee = Transaction Fee + Service Fee
+```
+
+<Callout type="info">
+  **Transaction Fee（交易手续费）**：用户为链上交易所支付的 Gas 费用，如在以太坊上的交易打包费。\
+  **Service Fee（服务手续费）**：RainLink 收取的跨链服务成本，具体标准详见下文。
+</Callout>
+
+## 服务费计费规则
+
+RainLink 的服务费采用按比例与最低费用并存的模式，确保费用公平且覆盖基本运营成本：
+
+| 资产类型         | 服务费比例 | 最低服务费      |
+| ------------ | ----- | ---------- |
+| ETH / WETH   | 0.2%  | 0.0004 ETH |
+| USDT / USDC  | 0.2%  | 0.5 USDT   |
+| 其他资产（ERC-20） | 0.25% | 0.3 Token  |
+
+> 实际服务费将在交易页面实时展示，用户可在发起跨链前清晰查看并确认。
+
+## 手续费用途透明化
+
+我们承诺，RainLink 所收取的服务手续费将主要用于以下用途：
+
+- **基础设施稳定性维护**：如通信器服务器与链上合约监控系统；
+- **安全升级与漏洞修复**：保障用户资产跨链过程的抗攻击能力.
+

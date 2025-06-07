@@ -1,0 +1,123 @@
+---
+title: Start Bridging
+description: Welcome to RainLink! This is a concise and clear operation document that takes you step by step through the entire process of a cross-chain asset transfer.
+keywords:
+  [
+    RainLink,
+    Privacy Policy,
+    Cross-chain Security,
+    Data Protection,
+    Web3 Compliance,
+  ]
+---
+
+import { Steps } from 'nextra/components'
+import { Callout } from 'nextra/components'
+import { Video } from '@components/video'
+
+# Try trading
+
+Welcome to RainLink! This is a concise and clear operation document that takes you step by step through the entire process of a cross-chain asset transfer. Whether you are using a cross-chain bridge for the first time or are an old blockchain player, I believe this guide can help you get started easily.
+
+## Prerequisites
+
+Before you start, please make sure you have prepared the following:
+
+1. A crypto wallet that supports Ethereum (or other source chains) (such as [MetaMask](https://metamask.io/), [OKX Wallet](https://www.okx.com/web3/wallet), [TokenPocket](https://www.tokenpocket.pro/), [TronLink](https://www.tronlink.org/), [TokenUp](https://www.tokenup.org/)...)
+
+2. A certain amount of native assets (such as ETH, BNB, TRX, XOC...) for cross-chain gas fees.
+
+3. [Supported](https://docs.xone.org/developers/token) cross-chain assets.
+
+## Let’s get started
+
+<Steps>
+### Visit RainLink
+
+Go to the [RainLink](https://rainlink.co/) website.
+
+### Connect a wallet
+
+On the RainLink website, click the **Connect Wallet** button, select your wallet type and connect.
+
+<Video src="/video/Connect.mp4" />
+
+### Select the source and target chains
+
+Select the source and target chains you want to cross-chain from the operation bar displayed on the page.
+
+<Video src="/video/Select.mp4" />
+
+<Callout type="important">
+
+- What are the source and target chains?
+
+ The source and target chains are the two endpoints of the cross-chain bridge. The source chain is the chain where the assets you want to cross-chain are located, and the target chain is the chain to which you want to transfer the assets.
+
+- How to select the source and target chains?
+
+ In the RainLink website operation interface, the supported source and target chains are listed, and you can click the source and target chains to select.
+
+- Which source and target chains are supported?
+
+ If you need to know the supported source and target chains, please go [here](/docs/network) to check.
+
+</Callout>
+
+### Enter the cross-chain amount
+
+After completing the above steps, enter the number of assets you need to cross-chain in the input box. At this time, you need to confirm the number of cross-chain assets and the type of cross-chain assets.
+
+<Video src="/video/Amount.mp4" />
+
+<Callout type="important">
+
+- Which assets are supported?
+
+ If you need to know the supported assets, please go [here](https://docs.xone.org/developers/token).
+
+- Is there a limit on the number of cross-chain assets?
+
+ There is no limit on the number of cross-chain assets, as long as the basic cross-chain asset accuracy is met. But at this time, you should understand the [cross-chain handling fee](/docs/fee) in detail, because this is unavoidable. If you do not meet the basic cross-chain handling fee, this cross-chain transaction will not be able to proceed.
+
+</Callout>
+
+### Confirm the receiving address
+
+Enter the address where you receive cross-chain assets in the **Receive Address** input box.
+
+<Video src="/video/Address.mp4" />
+
+<Callout type="warning">
+
+**Please note:**
+
+1. Before this, your wallet address will be automatically obtained and filled after you successfully link your wallet, but you should confirm the information here again; because once confirmed and authorized successfully, it will be irreversible.
+
+2. The cross-chain addresses can be inconsistent. For example, if the address you successfully linked is A, you have two options: A > A or A > B (here B represents other addresses).
+
+</Callout>
+
+### Start bridging
+
+Click the "Transfer" button, and the wallet plug-in or operation pop-up window of your terminal will be awakened. Follow the page prompts to confirm the information authorization.
+
+<Video src="/video/Transfer.mp4" />
+
+<Callout type="warning">
+
+**Please note:**
+
+1. When you authorize the bridge for the first time, you will be prompted to authorize the bridge asset permissions of the wallet address. This is because you need to obtain authorization for the asset operation of your wallet, because you need to lock the assets of the source chain into the [RainLink contract](https://docs.xone.org/developers/contracts) during the bridge process. If you are not sure whether the information authorized at this time is risky, you can go to the public contract information page to confirm.
+
+2. After the authorization is successful, you need to confirm the number and type of cross-chain assets again.
+
+</Callout>
+
+### Wait for the cross-chain to complete
+
+After the authorization is completed, the source chain assets will be locked into the [RainLink contract](https://docs.xone.org/developers/contracts). At this time, you need to wait for the cross-chain to complete. After completion, the cross-chain assets will be received on the target chain.
+
+### Congratulations on completing a bridge🎉
+
+</Steps>
