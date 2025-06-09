@@ -1,0 +1,77 @@
+---
+title: View Order
+description: RainLink is committed to providing efficient and secure cross-chain bridge services.
+keywords:
+  [
+    RainLink,
+    Privacy Policy,
+    Cross-chain Security,
+    Data Protection,
+    Web3 Compliance,
+  ]
+---
+
+import { Video } from '@components/video'
+import { Steps } from 'nextra/components'
+import NetworkScan from '@components/NetworkScan'
+import { Callout } from 'nextra/components'
+
+# Historical Orders
+
+<Video src="/video/ViewOrder.mp4" />
+
+Want to confirm whether your cross-chain transaction is completed? Or review the past operation records? RainLink provides a clear and intuitive historical order viewing function to help you easily grasp the circulation of each cross-chain asset.
+
+Whether you have just completed a transaction or want to check the historical operations, this guide will take you step by step to quickly find your cross-chain records.
+
+## How to view?
+
+<Steps>
+### Click "Connect Wallet" on the page;
+
+### After successful connection, the system will automatically identify your wallet address and display historical transaction records;
+
+### You can view the latest cross-chain operations in real time without manually entering the address;
+
+</Steps>
+
+## Other methods
+
+Go to the source chain or target chain browser of the corresponding transaction to view the transaction records of the operation address.
+
+<NetworkScan />
+
+<Callout type="info">
+
+1. You can use the transaction hash to view the detailed chain process in the corresponding web browser;
+
+2. If you use different chain wallets, it is recommended to query using the corresponding wallet addresses;
+
+3. Please make sure to use the official page or official domain name to access [RainLink](https://rainlink.co/) to prevent phishing websites from impersonating.
+
+</Callout>
+
+## Status Description
+
+<div className="overflow-x-auto">
+  <table className="table">
+    <thead>
+      <tr>
+        <th>State</th>
+        <th>description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Success</th>
+        <td>This cross-chain transaction has been completed.</td>
+      </tr>
+      <tr>
+        <th>Pending</th>
+        <td>Waiting for transaction confirmation.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+If the status remains at "Pending" for a long time, it is recommended to copy the order hash value and further track it through the blockchain browser, or [contact us](https://t.me/hello_xonechain) for help.

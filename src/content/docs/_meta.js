@@ -8,6 +8,9 @@ export default {
   fee: {
     title: ''
   },
+  record: {
+    title: ''
+  },
   network: {
     title: '',
   },

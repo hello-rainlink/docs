@@ -2,6 +2,7 @@
   "type": "module",
   "name": "rainlink_docs",
   "version": "0.1.0",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,9 +12,11 @@
   },
   "dependencies": {
     "daisyui": "^5.0.43",
+    "framer-motion": "^12.16.0",
     "next": "15.3.3",
     "nextra": "^4.2.17",
     "nextra-theme-docs": "^4.2.17",
+    "ogl": "^1.0.11",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

@@ -1,6 +1,6 @@
 ---
 title: Service Fee
-description: In today’s rapidly evolving blockchain space, information silos between chains remain a major barrier in the Web3 world. RainLink was born in this context,
+description: RainLink is committed to providing efficient and secure cross-chain bridge services.
 keywords:
   [
     RainLink,
@@ -12,50 +12,47 @@ keywords:
 ---
 
 import { Callout } from 'nextra/components'
+import RateTable from '@components/RateTable'
 
 # Service Fee Policy
 
-RainLink 致力于提供高效、安全的跨链桥服务。为了支持系统运行、网络中继、安全审计与基础设施维护，我们对每笔跨链操作收取适度的服务手续费（Service Fee）。本说明文档详细介绍服务费的构成、适用规则以及相关说明。
+RainLink is committed to providing efficient and secure cross-chain bridge services. In order to support system operation, network relay, security audit and infrastructure maintenance, we charge a moderate service fee (Service Fee) for each cross-chain operation. This document details the composition, applicable rules and related instructions of the service fee.
 
-## 什么是服务手续费？
+## What is the service fee?
 
-服务手续费是 RainLink 在完成跨链资产传输过程中向用户收取的固定或比例型费用，独立于区块链本身的 Gas 成本。该费用用于：
+The service fee is a fixed or proportional fee charged by RainLink to users in the process of completing cross-chain asset transfers, which is independent of the gas cost of the blockchain itself. The fee is used to:
 
-- 支付中继节点运营与维护成本；
-- 覆盖链下通信服务器资源消耗；
-- 资助持续安全审计与系统升级；
-- 提供用户支持与交易追踪服务。
+- Pay for relay node operation and maintenance costs;
+- Cover off-chain communication server resource consumption;
+- Fund continuous security audits and system upgrades;
+- Provide user support and transaction tracking services.
 
 
-## 服务手续费与交易手续费的区别
+## Difference between service fee and transaction fee
 
-用户在使用 RainLink 时通常会支付两个部分：
+Users usually pay two parts when using RainLink:
 
 ```math
 Bridge Fee = Transaction Fee + Service Fee
 ```
 
 <Callout type="info">
-  **Transaction Fee（交易手续费）**：用户为链上交易所支付的 Gas 费用，如在以太坊上的交易打包费。\
-  **Service Fee（服务手续费）**：RainLink 收取的跨链服务成本，具体标准详见下文。
+**Transaction Fee**: Gas fee paid by users for on-chain transactions, such as transaction packaging fees on Ethereum. \
+**Service Fee**: Cross-chain service cost charged by RainLink, see below for specific standards.
 </Callout>
 
-## 服务费计费规则
+## Service Fee Billing Rules
 
-RainLink 的服务费采用按比例与最低费用并存的模式，确保费用公平且覆盖基本运营成本：
+RainLink's service fee adopts a model of coexistence of proportional and minimum fees to ensure that the fees are fair and cover basic operating costs:
 
-| 资产类型         | 服务费比例 | 最低服务费      |
-| ------------ | ----- | ---------- |
-| ETH / WETH   | 0.2%  | 0.0004 ETH |
-| USDT / USDC  | 0.2%  | 0.5 USDT   |
-| 其他资产（ERC-20） | 0.25% | 0.3 Token  |
+<RateTable />
 
-> 实际服务费将在交易页面实时展示，用户可在发起跨链前清晰查看并确认。
+<Callout>The actual service fee will be displayed in real time on the transaction page, and you can view and confirm it before initiating the cross-chain transaction.</Callout>
 
-## 手续费用途透明化
+## Transparency of Fee Usage
 
-我们承诺，RainLink 所收取的服务手续费将主要用于以下用途：
+We promise that the service fees collected by RainLink will be mainly used for the following purposes:
 
-- **基础设施稳定性维护**：如通信器服务器与链上合约监控系统；
-- **安全升级与漏洞修复**：保障用户资产跨链过程的抗攻击能力.
+- **Infrastructure stability maintenance**: such as communicator servers and on-chain contract monitoring systems;
 
+- **Security upgrades and vulnerability fixes**: Ensure the anti-attack capability of user assets during cross-chain processes.

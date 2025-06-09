@@ -1,31 +1,41 @@
 import { Footer, Layout, Navbar } from 'nextra-theme-docs'
 import { Banner, Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
+import type { Metadata } from 'next'
 import './globals.css'
 
-export const metadata = {
-  metadataBase: new URL('https://docs.rainlink.io'),
-  title: {
-    template: '%s - RainLink Docs',
-  },
+export const metadata: Metadata = {
   description: 'RainLink is a cross-chain bridge technology designed specifically for multi-chain ecology, dedicated to achieving secure and efficient asset transfer between different blockchain networks.',
-  applicationName: 'RainLink',
+  metadataBase: new URL('https://docs.rainlink.io'),
   keywords: ['rainlink', 'rainlink.io', 'rainlink docs', 'rainlink documentation', 'rainlink blockchain', 'rainlink web3'],
-  generator: 'Next.js',
+  generator: 'RainLink',
+  applicationName: 'RainLink',
   appleWebApp: {
     title: 'RainLink',
-    keywords: ['rainlink', 'rainlink.io', 'rainlink docs', 'rainlink documentation', 'rainlink blockchain', 'rainlink web3'],
   },
-  // other: {
-  //   'msapplication-TileImage': '/ms-icon-144x144.png',
-  //   'msapplication-TileColor': '#fff'
-  // },
+  title: {
+    default: 'RainLink – Cross-chain Asset Transfer',
+    template: '%s | RainLink'
+  },
+  openGraph: {
+    url: './',
+    siteName: 'RainLink',
+    locale: 'en_US',
+    type: 'website'
+  },
+  other: {
+    'msapplication-TileImage': '',
+    'msapplication-TileColor': '#F77D30'
+  },
   twitter: {
     site: 'https://docs.rainlink.io'
+  },
+  alternates: {
+    canonical: './'
   }
 }
 
-const banner = <Banner storageKey="some-key">Nextra 4.0 is released 🎉</Banner>
+const banner = <Banner storageKey="some-key">🎉</Banner>
 const navbar = (
   <Navbar
     logo={
@@ -40,7 +50,7 @@ const navbar = (
       </span>
     </>
     }
-    chatLink="https://discord.gg/hEM84NMkRv"
+    projectLink="https://github.com/hello-rainlink/docs"
   />
 )
 const footer = <Footer>{new Date().getFullYear()} © RainLink.</Footer>
@@ -61,9 +71,9 @@ export default async function RootLayout({ children }) {
         <meta name="apple-mobile-web-app-title" content="RainLink" />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <body>
+      <body className="min-h-screen">
         <Layout
-          banner={banner}
+          // banner={banner}
           navbar={navbar}
           pageMap={await getPageMap()}
           editLink="Edit this page on GitHub"

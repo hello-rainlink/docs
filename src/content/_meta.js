@@ -4,6 +4,7 @@ export default {
   },
   index: {
     title: '',
+    display: "hidden",
     theme: {
       layout: 'full',
       pagination: false,

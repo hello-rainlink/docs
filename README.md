@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RainLink Docs
 
-## Getting Started
+Welcome to the **RainLink official document repository**! This repository stores and maintains all product documents, development interface instructions, usage tutorials and integration guides related to the RainLink cross-chain bridge.
 
-First, run the development server:
+RainLink is a modular, decentralized cross-chain bridge protocol that is committed to achieving secure, fast and low-cost asset transfers between different blockchain networks. Whether you are a developer, ordinary user, or partner, you can find the documents you need here.
+
+## 📚 Document content structure
+
+The documents in this repository are classified into the following modules:
+
+- **Quick Start**: A beginner's guide to help you complete your first cross-chain transfer
+- **Operation Guide**: Instructions for using various user-side functions (such as viewing historical orders, fee explanations, etc.)
+- **Network Support**: List of currently supported blockchain networks and assets
+- **Service Fees**: Description of the composition of transaction fees and service fees
+- **Developer Integration**: API instructions, contract interface, event monitoring specifications
+- **Security and Audit**: System security design, transaction verification mechanism, audit report, etc.
+
+## 📦 Run locally
 
 ```bash
+git clone https://github.com/hello-rainlink/docs.git
+
+cd docs
+
+npm install
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠 Contribute
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Community developers are welcome to submit PRs to improve or translate documents. You can also submit improvement suggestions or content errors in the Issues area.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Thank you for using RainLink.
