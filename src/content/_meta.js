@@ -12,8 +12,8 @@ export default {
       toc: false
     }
   },
-  docs: {
-    title: 'Docs'
+  guide: {
+    title: 'Guide'
   },
   about: {
     title: 'About'
