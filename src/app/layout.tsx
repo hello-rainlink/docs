@@ -1,5 +1,6 @@
 import { Footer, Layout, Navbar } from 'nextra-theme-docs'
 import { Banner, Head } from 'nextra/components'
+import type { FC, ReactNode } from 'react'
 import { getPageMap } from 'nextra/page-map'
 import type { Metadata } from 'next'
 import './globals.css'
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
   }
 }
 
-const banner = <Banner storageKey="some-key">🎉</Banner>
+// const banner = <Banner storageKey="some-key">🎉</Banner>
 const navbar = (
   <Navbar
     logo={
@@ -55,7 +56,9 @@ const navbar = (
 )
 const footer = <Footer>{new Date().getFullYear()} © RainLink.</Footer>
 
-export default async function RootLayout({ children }) {
+const RootLayout: FC<{
+  children: ReactNode
+}> = async ({ children }) => {
   return (
     <html
       lang="en"
@@ -86,3 +89,5 @@ export default async function RootLayout({ children }) {
     </html>
   )
 }
+
+export default RootLayout

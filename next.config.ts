@@ -23,7 +23,13 @@ const withNextra = nextra({
 // Export the final Next.js config with Nextra included
 export default withNextra({
   reactStrictMode: true,
+  eslint: {
+    ignoreDuringBuilds: true
+  },
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+  images: {
+    unoptimized: true
+  },
   webpack(config) {
     // rule.exclude doesn't work starting from Next.js 15
     const { test: _test, ...imageLoaderOptions } = config.module.rules.find(

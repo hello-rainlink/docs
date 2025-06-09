@@ -7,9 +7,9 @@ import { useInView, useMotionValue, useSpring } from "framer-motion"
 interface CountUpProps {
   to: number
   from?: number
-  decimals?: number           // <-- 支持小数位
-  decimal?: string            // <-- 小数点符号
-  separator?: string          // <-- 分隔符
+  decimals?: number
+  decimal?: string
+  separator?: string
   duration?: number
   delay?: number
   direction?: "up"|"down"
@@ -23,7 +23,6 @@ export default function CountUp({
   to,
   from = 0,
   decimals = 0,
-  decimal = ".",
   separator = "",
   duration = 2,
   delay = 0,
