@@ -10,7 +10,7 @@ export const Video: FC<{ src: string }> = ({ src }) => {
       controls
       className="x:focus-visible:nextra-focus mt-6 rounded-xl"
     >
-      <source src={src} type="video/mp4" />
+      <source src={'https://rainlink-docs.s3.ap-southeast-1.amazonaws.com'+src} type="video/mp4" />
     </video>
   )
 }
