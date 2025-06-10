@@ -23,6 +23,8 @@ const withNextra = nextra({
 // Export the final Next.js config with Nextra included
 export default withNextra({
   reactStrictMode: true,
+  output: 'export',
+  distDir: "build",
   eslint: {
     ignoreDuringBuilds: true
   },
