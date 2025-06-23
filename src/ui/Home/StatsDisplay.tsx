@@ -7,7 +7,7 @@ export default function StatsDisplay() {
   const stats = [
     { label: 'Network Support', value: 4 },
     { label: 'Bridge Token',    value: 6 },
-    { label: 'Service Fee(%)',     value: 0.0003, decimals: 4 },
+    { label: 'Service Fee(%)',     value: 0.03, decimals: 2 },
     { label: 'Use Times',       value: 1000 }
   ]
 

@@ -52,15 +52,15 @@ export default function Home() {
             <div className="flex justify-center gap-2">
               <button
                 className="btn btn-primary"
-                onClick={() => { window.location.href = '/docs/operation' }}
+                onClick={() => { window.location.href = '/guide/operation' }}
               >
                 Get Started
               </button>
               <button
-                className="btn btn-link"
+                className="btn btn-link dark:text-gray-300"
                 onClick={() => window.open('https://docs.xone.org/developers/contracts', '_blank')}
               >
-                Contract
+                Contract ↗
               </button>
             </div>
           </div>
