@@ -24,19 +24,19 @@ export const Networks: Network[] = [
     networks: 'Ethereum',
     type: 'L1',
     state: '✅ Active',
-    assetBacking: 'ETH、USDT、WXOC',
+    assetBacking: 'ETH、USDT、USDC、WXOC',
   },
   {
     networks: 'Xone',
     type: 'L1',
     state: '✅ Active',
-    assetBacking: 'ETH、BNB、TRX、XOC、USDT',
+    assetBacking: 'ETH、BNB、TRX、XOC、USDT、USDC',
   },
   {
     networks: 'BNB Smart Chain',
     type: 'L1',
     state: '✅ Active',
-    assetBacking: 'BNB、USDT、WXOC',
+    assetBacking: 'BNB、USDT、USDC、WXOC',
   },
   {
     networks: 'Tron',

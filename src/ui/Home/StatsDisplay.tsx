@@ -6,7 +6,7 @@ import CountUp from '@components/CountUp'
 export default function StatsDisplay() {
   const stats = [
     { label: 'Network Support', value: 4 },
-    { label: 'Bridge Token',    value: 6 },
+    { label: 'Bridge Token',    value: 7 },
     { label: 'Service Fee(%)',     value: 0.03, decimals: 2 },
     { label: 'Use Times',       value: 1000 }
   ]
@@ -15,7 +15,6 @@ export default function StatsDisplay() {
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 p-4">
       {stats.map((item, i) => {
         const isNumber = typeof item.value === 'number'
-        // 1. 自动算出要保留的小数位数
         const decimalPart   = isNumber
           ? item.value.toString().split('.')[1] || ''
           : ''

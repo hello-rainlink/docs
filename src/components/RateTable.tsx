@@ -14,6 +14,7 @@ export default function RateTable() {
           <tr>
             <th>
               USDT<br/>
+              USDC<br/>
               BNB<br/>
               ETH<br/>
               TRX
@@ -29,6 +30,7 @@ export default function RateTable() {
           <tr>
             <th>
               USDT<br/>
+              USDC<br/>
               BNB<br/>
               ETH<br/>
               TRX
